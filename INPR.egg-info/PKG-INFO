@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: INPR
+Version: 0.1
+Summary: A deep learning based project to detect indian number plates
+Home-page: UNKNOWN
+Author: Prathmesh Patil
+License: UNKNOWN
+Keywords: Deep Learning,Computer Vision,Pytorch,Detectron2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
