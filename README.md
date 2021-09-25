@@ -5,6 +5,10 @@ An open source Indian Number Plate Recogniton library built using deep learning.
 
 For GUI version please go to this [repo](https://github.com/patrickn699/Indian-Number-Plate-Extraction).
 
+![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)
+
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+
 
 
 
