@@ -40,13 +40,14 @@ def fetch_details(op,img):
 
         if len(i) == 10 or len(i) == 9:
             print('Trying to fetch the details please wait...')
-            data = fetch(i)
-            return pd.DataFrame(data)
+            #data = fetch(i)
+            #return pd.DataFrame(data)
+            return i
 
         else:
             return 'No number plate found'
 
-'''
+
 if __name__ == '__main__':
     grap,op,img = detect_plates(im)
     plt.imshow(grap)
@@ -54,4 +55,3 @@ if __name__ == '__main__':
     df = fetch_details(op,img)
     print(df)
     print(op)
-'''

@@ -1,6 +1,9 @@
 INPR.py
+LICENSE
+README.md
 setup.py
 INPR.egg-info/PKG-INFO
 INPR.egg-info/SOURCES.txt
 INPR.egg-info/dependency_links.txt
+INPR.egg-info/requires.txt
 INPR.egg-info/top_level.txt

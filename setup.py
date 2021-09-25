@@ -14,6 +14,7 @@ setup(
     version='0.1',
     description='A deep learning based project to detect indian number plates',
     author='Prathmesh Patil',
+    author_email='prathmesh.patil8899@gmail.com',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages= setuptools.find_packages(),
