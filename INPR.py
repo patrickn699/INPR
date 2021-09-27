@@ -12,9 +12,10 @@ import urllib.request
 
 l = Load_model()
 g = get_number_plate()
+#l.check_model()
 cfg = l.load_model()
 #det = details()
-
+'''
 def get_driver():
     url = "https://github.com/patrickn699/Indian-Number-Plate-Extraction/tree/master/chromedriver_win322/chromedriver.exe"
     print ("download start!")
@@ -22,13 +23,13 @@ def get_driver():
     print ("download complete!")
     print ("download file location: ", filename)
     print ("download headers: ", headers)
-
+'''
 
 #in_img = cv2.imread('test_img/bm.jpg')
 im = 'test_img/bm.jpg'
 
 def detect_plates(imgg):
-
+    
     op, img = l.predict(imgg, cfg)
     grap = l.visulize(img, cfg, op)
     return grap,op,img

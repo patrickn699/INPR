@@ -4,6 +4,7 @@ Version: 0.1
 Summary: A deep learning based project to detect indian number plates
 Home-page: UNKNOWN
 Author: Prathmesh Patil
+Author-email: prathmesh.patil8899@gmail.com
 License: UNKNOWN
 Keywords: Deep Learning,Computer Vision,Pytorch,Detectron2
 Platform: UNKNOWN

@@ -9,9 +9,29 @@ from get_num_plate import get_number_plate
 import numpy as np
 import os
 from PIL import Image
+import urllib.request
+
+
+
 
 
 class Load_model:
+
+    def check_model(self):
+        # load model
+        if not os.path.isfile('model_final_pth'):
+            url = "https://github.com/patrickn699/INPR/blob/main/model_final.pth"
+            url1 = "https://github.com/patrickn699/INPR/blob/main/config.yaml"
+            print ("downloading the model stay put...!")
+            filename, headers = urllib.request.urlretrieve(url, filename="model_final.pth")
+            fi, he = urllib.request.urlretrieve(url, filename="config.yaml")
+            print ("download complete!")
+            print ("download file location: ", filename)
+            print ("download headers: ", headers)
+
+        else:
+            print("model already downloaded")
+        
 
     def load_model(self):
         cfg = get_cfg()
