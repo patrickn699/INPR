@@ -12,7 +12,7 @@ import urllib.request
 
 l = Load_model()
 g = get_number_plate()
-#l.check_model()
+l.check_model()
 cfg = l.load_model()
 #det = details()
 '''
@@ -48,7 +48,7 @@ def fetch_details(op,img):
         else:
             return 'No number plate found'
 
-
+'''
 if __name__ == '__main__':
     grap,op,img = detect_plates(im)
     plt.imshow(grap)
@@ -56,3 +56,4 @@ if __name__ == '__main__':
     df = fetch_details(op,img)
     print(df)
     print(op)
+'''
