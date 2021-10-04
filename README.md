@@ -61,10 +61,10 @@ python -m pip install git+https://github.com/facebookresearch/detectron2.git
 
 ```
 
-3. Then install INPR package
+3. Then install inpr package
 
 ```python
-pip install INPR
+pip install inpr
 
 ```
 
@@ -80,7 +80,7 @@ python -m pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wh
 2. Then simply install the INPR package
 
 ```python
-pip install INPR
+pip install inpr
 
 ```
 
@@ -106,7 +106,7 @@ pip install INPR
 To detect the plates here is an example
 
 ```python
-    from INPR import detect_plates
+    from inpr.INPR import detect_plates
     import matplotlib.pyplot as plt
 
     im = 'test_img/kia.jpg'
@@ -126,7 +126,7 @@ Optionally you can also try to extract the text present inside the detected plat
 
 ```python
 
-    from INPR import fetch_details, detect_plates
+    from inpr.INPR import fetch_details, detect_plates
 
     im = 'test_img/kia.jpg'
 
