@@ -1,25 +1,26 @@
 import cv2
 from PIL import Image
 
-from INPR import detect_plates,fetch_details
+#from INPR import detect_plates, fetch_details
 import matplotlib.pyplot as plt
 import urllib.request
 import os
 import zipfile as z
 import requests
 import gdown
+from inpr import INPR
 
 
-im = 'test_img/kia.jpg'
+im = 'test_img/bm1.jpg'
 
-grap,op,img = detect_plates(im)
+grap,op,img = INPR.detect_plates(im)
 #plt.imshow(grap)
 #plt.savefig('grap3.png')
 #print(op)
 #print(img)
 #plt.show() 
 
-num_plate_text = fetch_details(op,img)
+num_plate_text = INPR.fetch_details(op,img)
 print(num_plate_text)
 
 '''

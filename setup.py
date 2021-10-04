@@ -9,15 +9,15 @@ with open("README.md",'r') as f:
 
 
 setup(
-    name='INPR',
-
+    name='inpr',
+    include_package_data=True,
     version='0.1',
     description='A deep learning based project to detect indian number plates',
     author='Prathmesh Patil',
     author_email='prathmesh.patil8899@gmail.com',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    packages= setuptools.find_packages(),
+    packages= ['inpr'],
     keywords=['Deep Learning','Computer Vision','Pytorch','Detectron2'],
     classifiers=[
         "Programming Language :: Python :: 3",
