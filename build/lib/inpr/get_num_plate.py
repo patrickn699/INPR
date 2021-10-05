@@ -67,9 +67,10 @@ class get_number_plate:
         #print (arr)
         return arr
 
-    def get_num_plate(self, lis):
+    def get_num_plate(self, lis, show_plates=False):
+        
+        #print(lis)
 
-        print(lis)
         #pl = []
         sta = ['AP','AR','AS','BR','CG','GA','GJ','HR' ,'HP' ,'JK','JH','KA','KL','MP','MH','MN','ML','MZ','NL' ,'OD','PB' ,'RJ','SK','TN','TS','TR','UA','UK','UP','WB','AN','CH','DN','DD','DL' ,'LD','PY']
         opp = []
@@ -99,7 +100,8 @@ class get_number_plate:
                     opp.append(pl1.upper())
         
         
-        print(opp)
+        #print(opp) # prints a list of cleaned number plates
+        
         try:
             opp.remove(a1)
         except Exception as e:
@@ -160,7 +162,7 @@ class get_number_plate:
         plt.close()
         return oc
 
-    def run_easy_ocr(self, output, im):
+    def run_easy_ocr(self, output, im, show_plates=False):
         bboxes = self.get_bboxes_from(output)
         # print(bboxes)
         for bbox in bboxes:
@@ -168,7 +170,7 @@ class get_number_plate:
             # display cropped image
             ocr_op = self.disp(crop_im)
             chk.append(ocr_op)
-        nump = self.get_num_plate(chk)
+        nump = self.get_num_plate(chk,show_plates = show_plates)
         #print(nump) # prints list of num plates
         return nump
 

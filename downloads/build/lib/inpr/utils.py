@@ -5,7 +5,7 @@ from detectron2.utils.visualizer import ColorMode, Visualizer
 from detectron2 import model_zoo
 import matplotlib.pyplot as plt
 import cv2
-from get_num_plate import get_number_plate
+from .get_num_plate import get_number_plate
 import numpy as np
 import os
 from PIL import Image
@@ -26,11 +26,11 @@ class Load_model:
             filename, headers = urllib.request.urlretrieve(url, filename="model_final.pth")
             fi, he = urllib.request.urlretrieve(url1, filename="config.yaml")
             print ("download complete!")
-            #print ("download file location: ", filename)
-            #print ("download headers: ", headers)
+            print ("download file location: ", filename)
+            print ("download headers: ", headers)
 
         else:
-            print("detection model already downloaded!")
+            print("model already downloaded")
         
 
     def load_model(self):
@@ -73,7 +73,7 @@ class Load_model:
 
         
 
-
+'''
 if __name__ == '__main__':
 
     l = Load_model()
@@ -81,6 +81,7 @@ if __name__ == '__main__':
     cfg = l.load_model()
     op, img = l.predict(os.path.join('Images', '47.jpg'), cfg)
     l.visulize(img, cfg, op)
+'''
 
 
 

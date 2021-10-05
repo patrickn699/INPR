@@ -34,8 +34,8 @@ def detect_plates(imgg):
     grap = l.visulize(img, cfg, op)
     return grap,op,img
 
-def fetch_details(op,img, show_plates=False):
-    plts = g.run_easy_ocr(op, img,show_plates)
+def fetch_details(op,img):
+    plts = g.run_easy_ocr(op, img)
     #print(plts)
     for i in plts:
 
@@ -46,7 +46,7 @@ def fetch_details(op,img, show_plates=False):
             return i
 
         else:
-            return 'Oops....unable to fetch!'
+            return 'No number plate found'
 
 '''
 if __name__ == '__main__':

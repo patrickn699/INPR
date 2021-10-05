@@ -1,11 +1,12 @@
 Metadata-Version: 2.1
-Name: Inpr
-Version: 0.1
+Name: INPR
+Version: 1.0.0
 Summary: A deep learning based project to detect indian number plates
-Home-page: UNKNOWN
+Home-page: https://github.com/patrickn699/INPR
 Author: Prathmesh Patil
 Author-email: prathmesh.patil8899@gmail.com
 License: UNKNOWN
+Download-URL: https://github.com/patrickn699/INPR.git
 Keywords: Deep Learning,Computer Vision,Pytorch,Detectron2
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
@@ -36,7 +37,7 @@ For GUI version please go to this [repo](https://github.com/patrickn699/Indian-N
 
 ## Version and updates
 
-* v0.01
+* v1.0.0: Initial release
     * Detect number plates and extract the texts from it.
 
 * Docker image comming soon!
@@ -103,27 +104,12 @@ pip install INPR
 
 
 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Usage
 
 To detect the plates here is an example
 
 ```python
-    from INPR import detect_plates
+    from INPR.inpr import detect_plates
     import matplotlib.pyplot as plt
 
     im = 'test_img/kia.jpg'
@@ -143,7 +129,7 @@ Optionally you can also try to extract the text present inside the detected plat
 
 ```python
 
-    from INPR import fetch_details, detect_plates
+    from INPR.inpr import fetch_details, detect_plates
 
     im = 'test_img/kia.jpg'
 
