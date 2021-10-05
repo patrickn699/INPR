@@ -1,0 +1,12 @@
+try.py
+utils.py
+inpr.py
+get_num_plate.py
+get_details.py
+build/
+dist/
+INPR.egg-info/
+downloads/
+model_final.pth
+config.yaml
+chromedriver_win322/
