@@ -14,5 +14,5 @@ chromedriver_win322/
 .gitattributes
 .pypirc
 backup/
-__pycache__/
+__pycache__
 
