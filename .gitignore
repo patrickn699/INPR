@@ -10,7 +10,8 @@ downloads/
 model_final.pth
 config.yaml
 chromedriver_win322/
-gitignore
-gitattributes
-pypirc
+.gitignore
+.gitattributes
+.pypirc
+backup/
 
