@@ -122,6 +122,8 @@ Optionally you can also try to extract the text present inside the detected plat
 
 ```
 
+Note:- getting the number plates text won't work for every image as it depends upon multiple factors like resolution,  distance of the object, lighting,etc. But still you can give it a try.
+
 
 
 
