@@ -1,5 +1,5 @@
 __pycache__/
- *.pyc
+*.pyc
 try.py
 utils.py
 inpr.py
