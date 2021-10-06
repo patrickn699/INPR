@@ -1,3 +1,4 @@
+__pycache__/
 try.py
 utils.py
 inpr.py
@@ -14,5 +15,5 @@ chromedriver_win322/
 .gitattributes
 .pypirc
 backup/
-__pycache__
+
 
