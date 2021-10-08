@@ -8,6 +8,8 @@ For GUI version please go to this [repo](https://github.com/patrickn699/Indian-N
 [![PyPI version](https://badge.fury.io/py/INPR.svg)](https://badge.fury.io/py/INPR)
 ![](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=darkgreen)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/weiji14/deepbedmap/)
+
 
 
 
