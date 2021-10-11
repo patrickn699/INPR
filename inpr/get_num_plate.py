@@ -37,8 +37,9 @@ class get_number_plate:
    
     def remove_un(self, arr):
         pl = []
-        sym = ['{', ']', '[', '}','.']
+        sym = ['{', ']', '[', '}','.','/','(',')','-']
         arr = list(arr)
+        #print(arr)
         
         for m in arr:
             if '.' in m:
@@ -57,7 +58,8 @@ class get_number_plate:
         if len(arr) == 10 or len(arr) >= 9:
             arr = list(arr)
         
-        #print(arr)
+        arr = list(arr)
+        #print(type(arr))
 
 
         for j in arr:
@@ -164,7 +166,7 @@ class get_number_plate:
 
     def run_easy_ocr(self, output, im, show_plates=False):
         bboxes = self.get_bboxes_from(output)
-        # print(bboxes)
+        #print(bboxes)
         for bbox in bboxes:
             crop_im = self.crop(bbox, in_img=im)
             # display cropped image

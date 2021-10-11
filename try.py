@@ -11,7 +11,7 @@ import gdown
 from INPR import inpr
 
 
-im = 'test_img/bm1.jpg'
+im = 'test_img/t1.jpg'
 
 grap,op,img = detect_plates(im)
 #plt.imshow(grap)
