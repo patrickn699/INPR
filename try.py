@@ -11,7 +11,7 @@ import gdown
 from INPR import inpr
 
 
-im = 'test_img/t1.jpg'
+im = 'test_img/h20.jpg'
 
 grap,op,img = detect_plates(im)
 #plt.imshow(grap)
@@ -20,7 +20,7 @@ grap,op,img = detect_plates(im)
 #print(img)
 #plt.show() 
 
-num_plate_text = fetch_details(op,img)
+num_plate_text = fetch_details(op,img,show_plates=True)
 print(num_plate_text)
 
 '''

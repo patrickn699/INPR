@@ -21,10 +21,15 @@ For GUI version please go to this [repo](https://github.com/patrickn699/Indian-N
 
 ## Version and updates
 
+* v1.0.1: Second release
+    * Fixed crashes and errors.
+    * Now you can view the list of detected plates using the `show_plates` parameter in "fetch_details" method.
+
 * v1.0.0: Initial release
     * Detect number plates and extract the texts from it.
 
-* Docker image comming soon!
+* Upcomming
+    * Docker image comming soon!
 
 
 

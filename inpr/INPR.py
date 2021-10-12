@@ -36,7 +36,12 @@ def detect_plates(imgg):
 
 def fetch_details(op,img, show_plates=False):
     plts = g.run_easy_ocr(op, img,show_plates)
-    print(plts)
+
+    if show_plates:
+        print(plts)
+        
+        
+
     for i in plts:
 
         if len(i) == 10 or len(i) == 9:

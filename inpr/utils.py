@@ -18,7 +18,7 @@ import urllib.request
 class Load_model:
 
     def check_model(self):
-        # load model
+        # download model
         if not os.path.isfile('model_final.pth'):
             url = "https://github.com/patrickn699/INPR/releases/download/inpr_v1.0/model_final.pth"
             url1 = "https://github.com/patrickn699/INPR/releases/download/inpr_v1.0/config.yaml"
@@ -26,8 +26,8 @@ class Load_model:
             filename, headers = urllib.request.urlretrieve(url, filename="model_final.pth")
             fi, he = urllib.request.urlretrieve(url1, filename="config.yaml")
             print ("download complete!")
-            print ("download file location: ", filename)
-            print ("download headers: ", headers)
+            #print ("download file location: ", filename)
+            #print ("download headers: ", headers)
 
         else:
             print("model already downloaded")

@@ -11,8 +11,8 @@ with open("README.md",'r') as f:
 setup(
     name='INPR',
     include_package_data=True,
-    version='1.0.0',
-    description='A deep learning based project to detect indian number plates',
+    version='1.0.1',
+    description='A deep learning based library to detect indian number plates',
     author='Prathmesh Patil',
     author_email='prathmesh.patil8899@gmail.com',
     long_description=long_description,
