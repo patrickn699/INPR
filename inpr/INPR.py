@@ -34,8 +34,8 @@ def detect_plates(imgg):
     grap = l.visulize(img, cfg, op)
     return grap,op,img
 
-def fetch_details(op,img, show_plates=False):
-    plts = g.run_easy_ocr(op, img,show_plates)
+def fetch_details(op,img, show_plates=False, gcp_ocr=False, gcp_key=None):
+    plts = g.run_easy_ocr(op, img,show_plates, gcp_ocr, gcp_key)
 
     if show_plates:
         print(plts)
@@ -52,6 +52,10 @@ def fetch_details(op,img, show_plates=False):
 
         else:
             return 'Oops....unable to fetch!'
+
+
+
+
 
 '''
 if __name__ == '__main__':

@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import re as r
 import easyocr
+from gcor import detect_text
 #import os
 #os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
@@ -159,20 +160,29 @@ class get_number_plate:
 
     def disp(self, im):
         oc = self.ocr(im)
-        #plt.imshow(im) # shows cropped num plate imgs
+        #plt.imshow(im)  shows cropped num plate imgs
         plt.show()
         plt.close()
         return oc
 
-    def run_easy_ocr(self, output, im, show_plates=False):
+    def run_easy_ocr(self, output, im, show_plates=False, gcp_ocr=False, gcp_key=None):
         bboxes = self.get_bboxes_from(output)
         #print(bboxes)
-        for bbox in bboxes:
-            crop_im = self.crop(bbox, in_img=im)
-            # display cropped image
-            ocr_op = self.disp(crop_im)
-            chk.append(ocr_op)
-        nump = self.get_num_plate(chk,show_plates = show_plates)
-        #print(nump) # prints list of num plates
-        return nump
+        if gcp_ocr:
+            for bbox in bboxes:
+                crop_im = self.crop(bbox, in_img=im)
+                g_lis = detect_text(crop_im, gcp_key)
+                return g_lis
+
+
+
+        else:
+            for bbox in bboxes:
+                crop_im = self.crop(bbox, in_img=im)
+                # display cropped image
+                ocr_op = self.disp(crop_im)
+                chk.append(ocr_op)
+            nump = self.get_num_plate(chk,show_plates = show_plates)
+            #print(nump) # prints list of num plates
+            return nump
 
