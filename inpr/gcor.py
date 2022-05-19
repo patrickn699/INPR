@@ -49,4 +49,4 @@ def detect_text(path:str, service_key:str)->list:
 
 
 
-detect_text("h20.jpg")
+#detect_text("h20.jpg")

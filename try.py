@@ -20,7 +20,7 @@ grap,op,img = detect_plates(im)
 #print(img)
 #plt.show() 
 
-num_plate_text = fetch_details(op,img,show_plates=True)
+num_plate_text = fetch_details(op,img,show_plates=True, gcp_ocr=False, gcp_key=None)
 print(num_plate_text)
 
 '''

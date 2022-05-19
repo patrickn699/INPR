@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import re as r
 import easyocr
-from gcor import detect_text
+from .gcor import detect_text
 #import os
 #os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
